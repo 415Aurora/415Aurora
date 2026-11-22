@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="310" viewBox="0 0 1200 310" role="img" aria-label="Yiwen Shi - Embodied AI, robot learning and robotics software">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0A1730"/><stop offset=".55" stop-color="#102447"/><stop offset="1" stop-color="#091124"/></linearGradient>
+<linearGradient id="accent" x1="0" x2="1"><stop stop-color="#57E6D6"/><stop offset="1" stop-color="#8AA8FF"/></linearGradient>
+<pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#5E83C0" stroke-opacity=".12"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="12"/></filter></defs><rect width="1200" height="310" rx="24" fill="url(#bg)"/><rect width="1200" height="310" rx="24" fill="url(#grid)"/>
+<circle cx="1030" cy="80" r="120" fill="#57E6D6" opacity=".05" filter="url(#glow)"/>
+<rect x="64" y="43" width="9" height="34" rx="4" fill="#57E6D6"/>
+<text x="90" y="66" font-size="17" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3" fill="#70E3DD">RESEARCH &amp; ENGINEERING PORTFOLIO</text>
+<text x="65" y="139" font-size="63" font-family="Arial, sans-serif" font-weight="800" fill="#F2F7FF" letter-spacing="1">YIWEN SHI</text>
+<text x="67" y="182" font-size="23" font-family="Arial, sans-serif" fill="#BED2F5">Embodied AI  /  Robot Learning  /  Robotics Software</text>
+<text x="67" y="220" font-size="18" font-family="Arial, sans-serif" fill="#AFC3DB">Connecting multimodal perception, reliable control &amp; learning.</text>
+<g font-family="Arial, sans-serif" font-weight="700" font-size="13" letter-spacing=".7">
+<rect x="66" y="250" width="168" height="34" rx="17" fill="#1B4061" stroke="#3D9AB3" stroke-opacity=".7"/><text x="88" y="272" fill="#A6FFF0">MANIPULATION</text>
+<rect x="248" y="250" width="149" height="34" rx="17" fill="#243657" stroke="#6D8CF1" stroke-opacity=".7"/><text x="270" y="272" fill="#D2D9FF">NAVIGATION</text>
+<rect x="411" y="250" width="146" height="34" rx="17" fill="#2E304B" stroke="#C68DCB" stroke-opacity=".7"/><text x="432" y="272" fill="#F3CDF4">ROBOT CONTROL</text></g>
+<g transform="translate(795 32)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M130 63C160 12 250 8 283 67" stroke="#456996" stroke-width="2" stroke-dasharray="5 10"/>
+<path d="M105 203C174 242 281 214 319 155" stroke="#456996" stroke-width="2" stroke-dasharray="5 10"/>
+<rect x="126" y="42" width="147" height="78" rx="27" fill="#182D4E" stroke="#8DDCFB" stroke-width="3"/>
+<rect x="148" y="60" width="103" height="42" rx="16" fill="#101D33" stroke="#5CBFCB" stroke-width="2"/>
+<path d="M173 80h18m18 0h18" stroke="#6CE5DA" stroke-width="5"/><path d="M197 119v42m-38 34 38-34 41 34" stroke="#88B8FD" stroke-width="5"/>
+<circle cx="197" cy="161" r="13" fill="#0D1B33" stroke="#82B7FD" stroke-width="3"/>
+<path d="M159 195l-23 36m102-36 26 36" stroke="#8BB6FD" stroke-width="6"/>
+<circle cx="135" cy="234" r="8" fill="#73E9D8"/><circle cx="266" cy="234" r="8" fill="#73E9D8"/>
+<circle cx="64" cy="99" r="26" fill="#172A44" stroke="#66DDDB" stroke-width="3"/><path d="M53 99h22m-11-11v22" stroke="#66DDDB" stroke-width="2"/>
+<circle cx="328" cy="115" r="20" fill="#192C4B" stroke="#B5A8FF" stroke-width="3"/><path d="M318 115l8 9 13-17" stroke="#B5A8FF" stroke-width="3"/>
+<path d="M91 99h28m161 16h25" stroke="url(#accent)" stroke-width="2" stroke-dasharray="5 6"/>
+</g></svg>
