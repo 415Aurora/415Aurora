@@ -1,12 +1,8 @@
 <div align="center">
 
-# Yiwen Shi
+<picture><img src="assets/portfolio-hero.svg" alt="Yiwen Shi — embodied AI and robotics research portfolio" width="100%" /></picture>
 
-**Embodied AI · Robot Learning · Robotics Software**
-
-*XR Teleoperation · Humanoid Manipulation · Embodied Navigation*
-
-I build robot systems and reproducible experiments at the intersection of **perception, control, and learning**.
+**XR Teleoperation · Humanoid Manipulation · Embodied Navigation**
 
 [Explore my projects](https://github.com/415Aurora?tab=repositories) · [GitHub profile](https://github.com/415Aurora)
 
@@ -21,6 +17,19 @@ I have an academic background in **Intelligent Construction** and focus on **emb
 I am particularly interested in **robot learning / VLA**, **learning from demonstrations**, **embodied navigation**, and building reliable robotics research infrastructure.
 
 ## Featured Projects
+
+<table>
+<tr>
+<td width="50%"><a href="https://github.com/415Aurora/Grasp-XR-Teleop"><img src="assets/card-grasp.svg" width="100%" alt="Grasp-XR-Teleop: humanoid XR teleoperation, demonstrations and Isaac Lab" /></a></td>
+<td width="50%"><a href="https://github.com/415Aurora/RoboNeck-AVP"><img src="assets/card-neck.svg" width="100%" alt="RoboNeck-AVP: head pose retargeting and Dynamixel neck control" /></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/415Aurora/jev-navi"><img src="assets/card-navi.svg" width="100%" alt="JEV-Navi: model-driven navigation with depth interception in Habitat" /></a></td>
+<td width="50%"><a href="https://github.com/415Aurora/ur5-control-lab"><img src="assets/card-ur5.svg" width="100%" alt="UR5 Control Lab: ROS Noetic, MoveIt and Gazebo" /></a></td>
+</tr>
+</table>
+
+<sub>The cards are custom vector diagrams of project scope, **not screenshots of running systems**. Follow each project for source code and validation status.</sub>
 
 ### 01 · [Grasp-XR-Teleop](https://github.com/415Aurora/Grasp-XR-Teleop)
 **Humanoid teleoperation · Manipulation demonstrations · Simulation**
@@ -65,6 +74,10 @@ A UR5 simulation and control lab with a graphical operator interface, planning e
 - Docker/local launch scripts and software regression tests.
 
 **Explore:** [Setup and architecture](https://github.com/415Aurora/ur5-control-lab#readme)
+
+## Research Focus
+
+![Research focus spanning robot manipulation, embodied navigation and robotics engineering](assets/research-focus.svg)
 
 ## Technical Toolkit
 
