@@ -16,7 +16,7 @@ I am seeking a robotics internship focused on motion control or localization and
 |---|---|---|
 | **[UR5 / Franka Control Lab](https://github.com/415Aurora/ur5-control-lab)** | Quintic joint trajectories, KDL-based kinematics and dynamics, null-space motion, MoveIt integration | Public UR5 code and visual results; the Franka/null-space extension remains local. No physical-robot accuracy claim |
 | **[RoboNeck-AVP](https://github.com/415Aurora/RoboNeck-AVP)** | Head-pose retargeting, calibration, EMA smoothing, asynchronous motor control and latency diagnostics | Two-axis teleoperation; end-to-end hardware timing still requires measured evidence |
-| **[CraneVLA](https://github.com/415Aurora/CraneVLA)** | Unity/PICO demonstrations, LeRobot data contracts, π0.5 SFT adaptation and paired policy evaluation | Public showcase with figures and scalar CSVs; full training/simulation code and model weights are not published |
+| **[CraneVLA](https://github.com/415Aurora/CraneVLA)** | `tower-crane-pico-unity` simulation/teleoperation, LeRobot data contracts, π0.5 SFT adaptation and Unity closed-loop evaluation | Public showcase with figures and scalar CSVs; full training/simulation code and model weights are not published |
 | **[JEV-Navi](https://github.com/415Aurora/jev-navi)** | Frozen multimodal navigation policies, depth-based action checks, trajectory metrics and failure diagnosis | A navigation experiment framework; current diagnostic runs do not establish successful navigation or a SLAM system |
 
 ### Explore the evidence

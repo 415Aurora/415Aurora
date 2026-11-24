@@ -16,7 +16,7 @@
 |---|---|---|
 | **[UR5 / Franka Control Lab](https://github.com/415Aurora/ur5-control-lab)** | 五次多项式关节轨迹、基于KDL的运动学与动力学、零空间运动、MoveIt集成 | 已公开UR5代码和可视化；Franka/零空间扩展源码仍在本地，不作真机精度宣称 |
 | **[RoboNeck-AVP](https://github.com/415Aurora/RoboNeck-AVP)** | 头部姿态重定向、标定、EMA平滑、异步电机控制与延迟诊断 | 双轴遥操作；端到端硬件时延需要进一步实测 |
-| **[CraneVLA](https://github.com/415Aurora/CraneVLA)** | Unity/PICO示教、LeRobot数据契约、π0.5 SFT适配与配对策略评测 | 公开仓库提供图表与标量CSV；完整训练/仿真源码和模型权重尚未公开 |
+| **[CraneVLA](https://github.com/415Aurora/CraneVLA)** | `tower-crane-pico-unity`仿真与遥操作、LeRobot数据契约、π0.5 SFT适配与Unity闭环评测 | 公开仓库提供图表与标量CSV；完整训练/仿真源码和模型权重尚未公开 |
 | **[JEV-Navi](https://github.com/415Aurora/jev-navi)** | 冻结多模态导航策略、深度动作检查、轨迹指标与失败诊断 | 导航实验框架；当前诊断尚未证明成功导航或完整SLAM能力 |
 
 ### 项目证据入口
