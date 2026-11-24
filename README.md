@@ -1,112 +1,55 @@
-<div align="center">
+<p align="center">
+  <img src="assets/portfolio-hero.svg" alt="Yiwen Shi — robotics and embodied AI portfolio" width="100%" />
+</p>
 
-<picture><img src="assets/portfolio-hero.svg" alt="Yiwen Shi — embodied AI and robotics research portfolio" width="100%" /></picture>
+# Robotics · Motion Control & Navigation
 
-**XR Teleoperation · Humanoid Manipulation · Embodied Navigation**
+[中文](README.zh-CN.md) | English
 
-[Explore my projects](https://github.com/415Aurora?tab=repositories) · [GitHub profile](https://github.com/415Aurora)
+My academic background is in **Intelligent Construction**, and my work focuses on **robotics and embodied intelligence**.
 
-</div>
+I am seeking a robotics internship focused on motion control or localization and navigation. I develop robot kinematics and trajectory software, teleoperation systems, and reproducible evaluation pipelines for learning-based robot policies.
 
----
+## Selected project portfolio
 
-## About
+| Project | Technical focus | Current scope |
+|---|---|---|
+| **[UR5 / Franka Control Lab](https://github.com/415Aurora/ur5-control-lab)** | Quintic joint trajectories, KDL-based kinematics and dynamics, null-space motion, MoveIt integration | Public UR5 code and visual results; the Franka/null-space extension remains local. No physical-robot accuracy claim |
+| **[RoboNeck-AVP](https://github.com/415Aurora/RoboNeck-AVP)** | Head-pose retargeting, calibration, EMA smoothing, asynchronous motor control and latency diagnostics | Two-axis teleoperation; end-to-end hardware timing still requires measured evidence |
+| **[CraneVLA](https://github.com/415Aurora/CraneVLA)** | Unity/PICO demonstrations, LeRobot data contracts, π0.5 SFT adaptation and paired policy evaluation | Public showcase with figures and scalar CSVs; full training/simulation code and model weights are not published |
+| **[JEV-Navi](https://github.com/415Aurora/jev-navi)** | Frozen multimodal navigation policies, depth-based action checks, trajectory metrics and failure diagnosis | A navigation experiment framework; current diagnostic runs do not establish successful navigation or a SLAM system |
 
-I have an academic background in **Intelligent Construction** and focus on **embodied intelligence and robotics**. My work spans humanoid robot teleoperation, robot control and simulation, and the evaluation of multimodal decision-making systems.
+### Explore the evidence
 
-I am particularly interested in **robot learning / VLA**, **learning from demonstrations**, **embodied navigation**, and building reliable robotics research infrastructure.
+- **[UR5 / Franka visual results](https://github.com/415Aurora/ur5-control-lab/blob/master/docs/visual-results.md):** simulation scene, joint-centering gain sweep and source data. The gallery distinguishes local extensions from the code currently published.
+- **[RoboNeck-AVP repository](https://github.com/415Aurora/RoboNeck-AVP):** software architecture, setup and tests for head-pose teleoperation.
+- **[CraneVLA visual results](https://github.com/415Aurora/CraneVLA/blob/main/docs/visual-results.md):** paired training curves, occlusion interventions and archived training scalars. A lower auxiliary loss is not a closed-loop success result.
+- **[JEV-Navi repository](https://github.com/415Aurora/jev-navi):** navigation protocols, trajectory logging and failure diagnostics. Navigation evaluation is distinct from localization and mapping.
 
-## Featured Projects
+## My contribution
 
-<table>
-<tr>
-<td width="50%"><a href="https://github.com/415Aurora/Grasp-XR-Teleop"><img src="assets/card-grasp.svg" width="100%" alt="Grasp-XR-Teleop: humanoid XR teleoperation, demonstrations and Isaac Lab" /></a></td>
-<td width="50%"><a href="https://github.com/415Aurora/RoboNeck-AVP"><img src="assets/card-neck.svg" width="100%" alt="RoboNeck-AVP: head pose retargeting and Dynamixel neck control" /></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="https://github.com/415Aurora/jev-navi"><img src="assets/card-navi.svg" width="100%" alt="JEV-Navi: model-driven navigation with depth interception in Habitat" /></a></td>
-<td width="50%"><a href="https://github.com/415Aurora/ur5-control-lab"><img src="assets/card-ur5.svg" width="100%" alt="UR5 Control Lab: ROS Noetic, MoveIt and Gazebo" /></a></td>
-</tr>
-</table>
+I independently developed the custom software, algorithm implementations, integration and experiment workflows described above. For CraneVLA, a collaborator created the base Unity model from my project concept. For RoboNeck-AVP, a collaborator designed the mechanical structure from my concept; I developed the teleoperation software.
 
-<sub>The cards are custom vector diagrams of project scope, **not screenshots of running systems**. Follow each project for source code and validation status.</sub>
+These projects build on established open-source tools and vendor SDKs. ROS, MoveIt, KDL, RLinf/OpenPI, Habitat and device SDKs are credited to their respective authors; my work focuses on project-specific implementation, adaptation and evaluation.
 
-### 01 · [Grasp-XR-Teleop](https://github.com/415Aurora/Grasp-XR-Teleop)
-**Humanoid teleoperation · Manipulation demonstrations · Simulation**
+## Engineering interests
 
-An experimental tool-manipulation workflow based on Unitree's XR teleoperation ecosystem, combining humanoid teleoperation with structured trial execution and data recording.
+- **Motion and geometry:** coordinate frames, Jacobians, trajectory interpolation, redundancy resolution and control timing.
+- **Robot software:** Python, NumPy, ROS, MoveIt, Gazebo, hardware adapters and simulator interfaces.
+- **Learning-based systems:** demonstration alignment, action-window semantics, dataset separation and controlled comparisons.
+- **Evaluation:** explicit failure cases, complete denominators, traceable configurations and reproducible experiment records.
 
-- Standardized task definitions, episode/trial organization and experiment-summary tooling.
-- Wrench grasp-and-transfer task in the Isaac-based simulation setup, with a specified target zone and success criterion.
-- Explicit separation of project-specific extensions from [Unitree's upstream `xr_teleoperate`](https://github.com/unitreerobotics/xr_teleoperate).
+## Current priorities
 
-**Explore:** [Project overview](https://github.com/415Aurora/Grasp-XR-Teleop#readme) · [Experiment workflow](https://github.com/415Aurora/Grasp-XR-Teleop/tree/main/docs/graduation_design)
+Strengthen measured trajectory tracking and teleoperation benchmarks, consolidate CraneVLA experiment provenance, and extend existing sensor workflows toward evaluated localization and odometry baselines.
 
-### 02 · [RoboNeck-AVP](https://github.com/415Aurora/RoboNeck-AVP)
-**XR pose retargeting · Real-time control design · Hardware integration**
+I value clear boundaries between an implemented interface, a passing software test and a verified robot capability.
 
-A Python application that maps Apple Vision Pro head orientation to a dual-axis Dynamixel robotic neck.
 
-- Yaw/pitch retargeting, calibration, deadzones, soft limits, and constrained commands.
-- Input freshness, readiness and safe HOLD/FAULT behavior.
-- PyQt6 operator console, diagnostics and a mock-hardware testing path.
+## Additional projects
 
-**Explore:** [Control architecture and setup](https://github.com/415Aurora/RoboNeck-AVP#readme) · [Regression tests](https://github.com/415Aurora/RoboNeck-AVP/tree/main/tests)
+- [Grasp-XR-Teleop](https://github.com/415Aurora/Grasp-XR-Teleop) — humanoid XR teleoperation and manipulation experiment workflows built on an upstream ecosystem.
+- [OpenGlasses](https://github.com/415Aurora/OpenGlasses) — camera transport and multimodal interaction prototyping.
+- [SteelMind](https://github.com/415Aurora/SteelMind) — engineering workflows and document generation.
 
-### 03 · [jev-navi](https://github.com/415Aurora/jev-navi)
-**Embodied navigation · Multimodal decision models · Evaluation**
-
-A research testbed for investigating frozen multimodal decision models in closed-loop, language-conditioned local navigation using Habitat.
-
-- Model action-proposal adapters, short RGB/action histories and a metric-depth safety layer.
-- Reproducible task manifests, episode logging, offline replay and failure analysis.
-- Preliminary real-model pilots and diagnostics, **not** a validated full VLN-CE benchmark or a claimed successful navigation policy.
-
-**Explore:** [Research summary](https://github.com/415Aurora/jev-navi#readme) · [Research protocol](https://github.com/415Aurora/jev-navi/blob/main/docs/research_protocol.md) · [Pilot diagnostics](https://github.com/415Aurora/jev-navi/blob/main/docs/startlux_pilot_2026-10-27.md)
-
-### 04 · [ur5-control-lab](https://github.com/415Aurora/ur5-control-lab)
-**ROS · MoveIt · Gazebo · Robot motion planning**
-
-A UR5 simulation and control lab with a graphical operator interface, planning execution and structured experiment exports.
-
-- ROS Noetic / Gazebo and MoveIt integration, including Cartesian pose targets.
-- Runtime and trajectory metrics exported as CSV/JSON.
-- Docker/local launch scripts and software regression tests.
-
-**Explore:** [Setup and architecture](https://github.com/415Aurora/ur5-control-lab#readme)
-
-## Research Focus
-
-![Research focus spanning robot manipulation, embodied navigation and robotics engineering](assets/research-focus.svg)
-
-## Technical Toolkit
-
-| Area | Tools and topics |
-| --- | --- |
-| **Robotics** | ROS / ROS 2, MoveIt, Gazebo, robot kinematics and control |
-| **Simulation & evaluation** | Isaac Sim / Isaac Lab, Habitat, scenario configuration, trajectory analysis |
-| **Embodied AI** | Imitation learning, VLA research, multimodal decision models, evaluation protocols |
-| **Hardware & sensing** | Unitree G1, Apple Vision Pro, Dynamixel, depth and stereo perception |
-| **Development** | Python, Docker, Git, pytest, experiment automation |
-
-## How I Approach Research Engineering
-
-1. **Make the system run:** establish clear interfaces between sensors, control services, robot execution and simulators.
-2. **Make experiments comparable:** freeze configs, define success criteria, log trajectories and failure modes.
-3. **Make claims verifiable:** distinguish software smoke tests from real-model results, simulation from hardware, and upstream capabilities from new contributions.
-4. **Make work reproducible:** document dependencies, test paths, evaluation scripts and known limitations.
-
-## Other Projects
-
-- [OpenGlasses](https://github.com/415Aurora/OpenGlasses) — smart-glasses prototyping, camera transport and multimodal interaction.
-- [SteelMind](https://github.com/415Aurora/SteelMind) — tool-driven engineering workflows with deterministic analysis and document generation.
-
----
-
-<div align="center">
-
-**Interested in robotics research, embodied AI, and research engineering collaborations.**
-
-[GitHub](https://github.com/415Aurora) · [Repositories](https://github.com/415Aurora?tab=repositories)
-
-</div>
+[All repositories](https://github.com/415Aurora?tab=repositories) · [GitHub](https://github.com/415Aurora)
